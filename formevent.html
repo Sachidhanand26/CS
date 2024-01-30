@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+window.addEventListener( "load", start, false );
+function start()
+{
+document.getElementById("fname").addEventListener("focus",focusone, false );
+document.getElementById("fname").addEventListener("blur", blurone, false );
+document.getElementById("roll").addEventListener("focus",focustwo, false );
+document.getElementById("roll").addEventListener("blur", blurone, false );
+document.getElementById("myform").addEventListener("submit",subfun, false );
+document.getElementById("myform").addEventListener("reset",resetfun, false );
+}
+
+function focusone() 
+{document.getElementById("help").innerHTML="Enter name" ;
+}
+function focustwo() 
+{document.getElementById("help").innerHTML="Enter rollno" ;
+}
+function blurone() 
+{ document.getElementById("help").innerHTML="" ;
+}
+function subfun() 
+{ window.alert("Are you Sure to submit");
+  window.alert("Thank you");
+}
+function resetfun() 
+{window.alert("Are you Sure to reset")}
+</script>
+
+</head>
+
+
+<body>
+<h1>Focus and Blur event</h1>
+<form id="myform">
+Enter your name: <input type="text" id="fname" ><p id="help" style="border:solid; height:20pt;"></p><br><br>
+Enter Rollnumber:<input type="text" id="roll"><br><br>
+<input type="submit"  id="sub">
+<input type="reset"  id="reset">
+</form>
+<p id="help" style="border:solid; height:20pt;"></p>
+</body>
+</html>

@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+.header{
+    
+    width: 100%;
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 7%;
+}
+.title{
+    color: #0b0b0b;
+    font-size: 25px;
+}
+.nav-links li{
+    list-style: none;
+    display: inline-block;
+    margin: 10px 30px;
+}
+.nav-links li a{
+    text-decoration: none;
+    color: #040404;
+}
+.register-btn{
+    background: #090909;
+    color: #fdfbfb;
+    padding: 8px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+.container{
+    padding: 0 7%;
+}
+.sub-title{
+    margin: 50px 0px 20px;
+    font-size: 2.2vw;
+    font-weight: 500;
+    color: #0e0d0d;
+}
+.popular{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+}
+.popular div img{
+    min-height: 100%;
+    width: 100%;
+    border-radius: 15px;
+}
+.aboutus{
+    text-align: center;
+    margin: 80px 0;
+    color: #333;
+    font-size: 17px;
+}
+.aboutus h2{
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+.footer{
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    grid-gap: 5px;
+    margin: 50px 0 5px;
+    text-align: center;
+}
+.footer img{
+    width: 3%;
+    border-radius: 5px;
+}
+.footer a{
+    text-decoration: none;
+    color: #999;
+    font-size: 22px;
+    margin: 0 10px;
+}
+.footer hr{
+    background: #999;
+    height: 1px;
+    margin: 20px 0px;
+}
+.footer p{
+    padding-bottom: 15px;
+}
+.contact{
+    text-align: center;
+    margin: 80px 0;
+    color: #333;
+    font-size: 17px;
+}
+.contact h2{
+    font-size: 28px;
+    margin-bottom: 30px;
+    font-weight: 500;
+}
+a{
+    text-decoration: none;
+    color: black;
+}

@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Steam</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  <!-- Owl Carousel css-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <!-- Owl Carousel css-->
+
+
+  <!-- jquery css-->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <!-- jquery css-->
+
+</head>
+
+<body>
+  <section class="home">
+    <div class="headerbg ">
+      <header>
+        <div class="container ">
+          <div class="navbar flex1">
+            <div class="logo">
+              <img src="image/logo.png" alt="">
+            </div>
+
+            <nav>
+              <ul id="menuitem">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Store</a></li>
+                <li><a href="#">Catagories</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Cart</a></li>
+              </ul>
+            </nav>
+            <span class="fa fa-bars" onclick="menutoggle()"></span>
+
+            <div class="subscribe flex">
+              <i class="fas fa-search"></i>
+              <i id="palybtn" class="fas fa-shopping-cart"></i>
+              <button type="button" onclick="location.href='login.html'">Login</button>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="home_content mtop">
+        <div class="container">
+          <div class="left">
+            <h1>HOGWARTS LEGACY</h1>
+
+            <div class="time flex">
+              <label>R</label>
+              <i class="fas fa-circle"></i>
+              <span>Rs.3,599</span>
+              <i class="fas fa-circle"></i>
+              <p>2023</p>
+              <i class="fas fa-circle"></i>
+              <button>RPG</button>
+            </div>
+
+            <p>Hogwarts Legacy is an action role-playing game played in a third person perspective, where players are embarking on an open world journey; threatened by an ancient secret. One of the main elements for the player is to attend classes at Hogwarts School of Witchcraft and Wizardry.
+            </p>
+            <div class="button flex">
+              <button class="btn">BUY NOW</button>
+              <a href="https://www.youtube.com/watch?v=BtyBjOW8sGY"><i id="palybtn" class="fas fa-play"></i></a>
+              <p>WATCH TRAILER</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "200px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 50);
+    })
+  </script>
+
+
+
+  <section class="popular mtop">
+    <div class="container ">
+      <div class="heading flex1">
+        <h2>Featured Games</h2>
+        <button>More Games</button>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p2.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+            </div>
+            <div class="text">
+              <h3>Horizon Forbbiden West</h3>
+              <div class="time flex">
+                <span>Rs.3,599</span>
+                <i class="fas fa-circle"></i>
+                <a>Action & Adventure</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/cropped-1920-1080-917971.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+            </div>
+            <div class="text">
+              <h3>Red Dead Redemption 2</h3>
+              <div class="time flex">
+                <span>Rs.1,599</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/cropped-1920-1080-1159892.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+            </div>
+            <div class="text">
+              <h3>Kena Bridge os Spirits</h3>
+              <div class="time flex">
+                <span>Rs.999</span>
+                <i class="fas fa-circle"></i>
+                <a>Adventure</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p4.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+            </div>
+            <div class="text">
+              <h3>Grand Theft Auto V</h3>
+              <div class="time flex">
+                <span>Rs.2,499</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p5.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+            </div>
+            <div class="text">
+              <h3>Uncharted 4 A Theif's End </h3>
+              <div class="time flex">
+                <span>Rs.3,099</span>
+                <i class="fas fa-circle"></i>
+                <a>Action & Adventure</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p6.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+            </div>
+            <div class="text">
+              <h3>Death Stranding</h3>
+              <div class="time flex">
+                <span>Rs.3,799</span>
+                <i class="fas fa-circle"></i>
+                <a>Adventure</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/p7.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+            </div>
+            <div class="text">
+              <h3>Days Gone</h3>
+              <div class="time flex">
+                <span>Rs.3,599</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="popular mtop">
+    <div class="container ">
+      <div class="heading flex1">
+        <h2>Trending Games</h2>
+        <button>More Games</button>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/home.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+            </div>
+            <div class="text">
+              <h3>Hogwarts Legacy</h3>
+              <div class="time flex">
+                <span>Rs.3,599</span>
+                <i class="fas fa-circle"></i>
+                <a>RPG</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/thumb-1920-1151249.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+            </div>
+            <div class="text">
+              <h3>Elden Ring</h3>
+              <div class="time flex">
+                <span>Rs.3,999</span>
+                <i class="fas fa-circle"></i>
+                <a>Action </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/evil.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+            </div>
+            <div class="text">
+              <h3>Evil West</h3>
+              <div class="time flex">
+                <span>Rs.1,499</span>
+                <i class="fas fa-circle"></i>
+                <a>Action</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/nfs.png" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+            </div>
+            <div class="text">
+              <h3>NFS Unbound</h3>
+              <div class="time flex">
+                <span>Rs.2,499</span>
+                <i class="fas fa-circle"></i>
+                <a>Racing</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/calisto.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+            </div>
+            <div class="text">
+              <h3>Callisto Protocal</h3>
+              <div class="time flex">
+                <span>Rs.2,499</span>
+                <i class="fas fa-circle"></i>
+                <a>Horror</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Owl Carousel -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+  <!-- Owl Carousel -->
+
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        411: {
+          items: 1
+        },
+        768: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+
+
+
+
+
+  <section class="new_realase top">
+    <div class="container">
+      <div class="owl-carousel owl-carousel2 owl-theme">
+        <div class="items">
+          <div class="left">
+            <div class="img">
+              <img src="image/wallpapersden.com_atomic-heart-hd-gaming_1920x1200.jpg" alt="">
+            </div>
+            <div class="heading">
+              <h2> <span></span> NEW REALEASE</h2>
+              <h1>ATOMIC HEART</h1>
+            </div>
+            <div class="time flex">
+              <label>A</label>
+              <i class="fas fa-circle"></i>
+              <span>Rs.3,499</span>
+              <i class="fas fa-circle"></i>
+              <a class="flex1"><img src="https://img.icons8.com/color/95/000000/imdb.png" /> 8.0</a>
+              <i class="fas fa-circle"></i>
+              <p>2023</p>
+              <i class="fas fa-circle"></i>
+              <button>Add to Cart</button>
+            </div>
+
+            <p>With his AI partner Charles, P-3 must confront homicidal robots and failed biomechanical experiments while dealing with his own, ever-deteriorating mental stability. P-3 tracks down Petrov in one of the labs, and finds out that he is working with the neurosurgeon Dr. Larisa Filatova.
+            </p>
+
+            <div class="button flex">
+              <button class="btn">BUY NOW</button>
+              <a href="https://www.youtube.com/watch?v=VbIc2_FwReE"><i id="palybtn" class="fas fa-play"></i></a>
+              <p>WATCH TRAILER</p>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="left">
+            <div class="img">
+              <img src="image/cropped-1920-1080-1295037.jpg" alt="">
+            </div>
+            <div class="heading">
+              <h2> <span></span> NEW REALEASE</h2>
+              <h1>THE LAST OF US PART I </h1>
+            </div>
+            <div class="time flex">
+              <label>M</label>
+              <i class="fas fa-circle"></i>
+              <span>Rs.3,999</span>
+              <i class="fas fa-circle"></i>
+              <a class="flex1"><img src="https://img.icons8.com/color/95/000000/imdb.png" /> 9.8</a>
+              <i class="fas fa-circle"></i>
+              <i class="fas fa-circle"></i>
+              <p>2023</p>
+              <i class="fas fa-circle"></i>
+              <button>Add to Cart</button>
+            </div>
+
+            <p>In 2013, Joel is a single father living near Austin, Texas, with his twelve-year-old daughter Sarah. One night, an outbreak of a mutant Cordyceps fungus ravages the United States, transforming its human hosts into cannibalistic monsters. As Joel, his brother Tommy, and Sarah flee the chaos, Sarah is shot by a soldier and dies in Joel's arms.
+
+            </p>
+
+            <div class="button flex">
+              <button class="btn">BUY NOW</button>
+              <a href="https://www.youtube.com/watch?v=R2Ebc_OFeug"><i id="palybtn" class="fas fa-play"></i></a>
+              <p>WATCH TRAILER</p>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="left">
+            <div class="img">
+              <img src="image/cropped-1920-1080-1277778.jpg" alt="">
+            </div>
+            <div class="heading">
+              <h2> <span></span> NEW REALEASE</h2>
+              <h1>DEAD SPACE </h1>
+            </div>
+            <div class="time flex">
+              <label>M</label>
+              <i class="fas fa-circle"></i>
+              <span>Rs.2,699</span>
+              <i class="fas fa-circle"></i>
+              <a class="flex1"><img src="https://img.icons8.com/color/95/000000/imdb.png" /> 9.1</a>
+              <i class="fas fa-circle"></i>
+              <p>2023</p>
+              <i class="fas fa-circle"></i>
+              <button>Action</button>
+            </div>
+
+            <p>Dead Space is set in the year 2508, a time when humanity has spread throughout the universe. Following near-extinction of humans on Earth due to resource shortages, ships dubbed "Planetcrackers" are being used to harvest resources from barren planets.
+            </p>
+
+            <div class="button flex">
+              <button class="btn">BUY NOW</button>
+              <a href="https://www.youtube.com/watch?v=cTDJNZ9cK1w"><i id="palybtn" class="fas fa-play"></i></a>
+              
+              <p>WATCH TRAILER</p>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="left">
+            <div class="img">
+              <img src="image/miles_morales_spider_man_4k_hd_marvels_spider_man_miles_morales-1920x1080.jpg" alt="">
+            </div>
+            <div class="heading">
+              <h2> <span></span> NEW REALEASE</h2>
+              <h1>SPIDER MAN MILES MORALES</h1>
+            </div>
+            <div class="time flex">
+              <label>M</label>
+              <i class="fas fa-circle"></i>
+              <span>Rs.3,699</span>
+              <i class="fas fa-circle"></i>
+              <a class="flex"><img src="https://img.icons8.com/color/95/000000/imdb.png" /> 8.4</a>
+              <i class="fas fa-circle"></i>
+              <p>2023</p>
+              <i class="fas fa-circle"></i>
+              <button>Add to Cart</button>
+            </div>
+
+            <p>When Peter Parker aka Spider-Man heads to Europe, Miles Morales aka the other Spider-Man must take his place and make sure New York is safe, but when a group named The Underground take over the city, Miles must take his job seriously and see how it is to be Spider-Man.
+            </p>
+
+            <div class="button flex">
+              <button class="btn">BUY NOW</button>
+              <a href="https://www.youtube.com/watch?v=CMRBuagwRb4"><i id="palybtn" class="fas fa-play"></i></a>
+              <p>WATCH TRAILER</p>
+            </div>
+          </div>
+        </div>
+        <div class="items">
+          <div class="left">
+            <div class="img">
+              <img src="image/cropped-1920-1080-1273262.jpg" alt="">
+            </div>
+            <div class="heading">
+              <h2> <span></span> NEW REALEASE</h2>
+              <h1>TEKKEN 8</h1>
+            </div>
+            <div class="time flex">
+              <label>A</label>
+              <i class="fas fa-circle"></i>
+              <span>Rs.1,699</span>
+              <i class="fas fa-circle"></i>
+              <a class="flex1"><img src="https://img.icons8.com/color/95/000000/imdb.png" /> 8.5</a>
+              <i class="fas fa-circle"></i>
+              <p>2023</p>
+              <i class="fas fa-circle"></i>
+              <button>Add to Cart</button>
+            </div>
+
+            <p>TEKKEN 8 continues the tragic saga of the Mishima and Kazama bloodlines and their world-shaking father-and-son grudge matches. This latest saga begins where the previous title left off, with a world mired deep in the devastating war between Kazuya Mishima and Jin Kazama.
+            </p>
+
+            <div class="button flex">
+              <button class="btn">BUY NOW</button>
+              <a href="https://www.youtube.com/watch?v=2hPuRQz6IlM"><i id="palybtn" class="fas fa-play"></i></a>
+              <p>WATCH TRAILER</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 20,
+      dots: true,
+      items: 1
+    })
+  </script>
+
+
+
+  <section class="popular mtop">
+    <div class="container ">
+      <div class="heading flex1">
+        <h2>Top Battle Royal Games</h2>
+        <button>More Games</button>
+      </div>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/MWII-LAUNCH-INTEL-TOUT.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+            </div>
+            <div class="text">
+              <h3>Call of Duty Mordern Warfare II</h3>
+              <div class="time flex">
+                <span>Rs.4,599</span>
+                <i class="fas fa-circle"></i>
+                <a>Battle Royal</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/Fortnite-Wallpaper-01-1920-x-1080.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+            </div>
+            <div class="text">
+              <h3>Fortnite</h3>
+              <div class="time flex">
+                <span>Free to play</span>
+                <i class="fas fa-circle"></i>
+                <a>Battle Royal</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/Valorant-Wallpaper-HD.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+            </div>
+            <div class="text">
+              <h3>Valorent</h3>
+              <div class="time flex">
+                <span>Free to play</span>
+                <i class="fas fa-circle"></i>
+                <a>Battle Royal</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/battle.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+            </div>
+            <div class="text">
+              <h3>Battle Field V</h3>
+              <div class="time flex">
+                <span>Rs.4,499</span>
+                <i class="fas fa-circle"></i>
+                <a>Battle Royal</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box">
+            <div class="imgBox">
+              <img src="image/thumb-1920-992033.jpg" alt="">
+              <div class="icon">
+                <i class="far fa-heart"></i>
+                <i class="fas fa-plus"></i>
+              </div>
+            </div>
+
+            <div class="content">
+            </div>
+            <div class="text">
+              <h3>Apex Legends </h3>
+              <div class="time flex">
+                <span>Free to play</span>
+                <i class="fas fa-circle"></i>
+                <a>Battle Royal</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- owl -carousel theme-->
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      responsive: {
+        414: {
+          items: 1
+        },
+        600: {
+          items: 2
+        },
+        1000: {
+          items: 4
+        }
+      }
+    })
+  </script>
+
+
+
+  <footer>
+    <div class="container mtop">
+      <div class="box">
+        <div class="logo">
+          <img src="image/logo.png">
+        </div>
+        <p> Buy PC games and get the latest game and community news with Steam.</p>
+        <div class="icon">
+          <a href="https://www.facebook.com/sadhanand.official/"><i class="fab fa-facebook-square"></i></a>
+          <a href="https://www.instagram.com/iam_sadhanand/"><i class="fab fa-instagram"></i></a>
+          <a href="https://twitter.com/explore"><i class="fab fa-twitter-square"></i></a>
+          <a href="https://www.youtube.com/channel/UCGc9Z5TN7T4JrDKRYi86UvA"><i class="fab fa-youtube-square"></i></a>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Explore</h2>
+        <div class="flex">
+          <ul>
+            <li>Home</li>
+            <li>New Releases</li>
+            <li>Trending</li>
+            <li>Most Rated</li>
+          </ul>
+          <ul class="ul">
+            <li>Action</li>
+            <li>Adventure</li>
+            <li>Battle Royal</li>
+            <li>RPG</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box ">
+        <h2>Company</h2>
+        <div class="flex">
+          <ul>
+            <li>Company</li>
+            <li>Terms of Use</li>
+            <li>Contact us</li>
+            <li>Our Team</li>
+          </ul>
+          <ul class="ul">
+            <li>Privacy Policy</li>
+            <li>Helps Center</li>
+            <li>Payment Policy</li>
+            <li>FAQ</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Download App</h2>
+        <p>With the free Steam Mobile App, you can take Steam with you anywhere. Buy PC games and get the latest game and community news - while protecting your Steam account. Shop Steam and Browse the Steam catalog of PC games from your phone. Never miss a sale again.</p>
+        <div class="img flex1">
+          <img src="image/app1.png" alt="">
+          <img src="image/app2.png" alt="">
+        </div>
+      </div>
+    </div>
+    <p class="legal">Copyright (c) 2023 Copyright Holder All Rights Reserved | Made By <i class="fas fa-heart"></i> Sadhanand S S</p>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,54 @@
+body{
+    background: none;
+    background-size: 100%;
+}
+.regform{
+    width: 400px;
+    margin: 130px auto;
+    padding: 5px 10px 15px;
+    background-color: rgb(248, 248, 248);
+    color: rgb(13, 13, 14);
+    font-size: 20px;
+    border-radius: 10px;
+}
+.regform h3{
+    text-align: center;
+    color: rgb(6, 6, 6);
+}
+.regform label{
+    display: block;
+}
+.input input{
+    width: 100%;
+    font-size: 0.7em;
+    border: 1px solid rgb(6, 6, 6);
+    box-shadow: 2px;
+    border-radius: 5px;
+    padding: 10px 5px;
+    box-sizing: border-box;
+    margin: 5px 0px 5px;
+}
+input:focus{
+    background-color: #ffffff;
+}
+.Button{
+    text-align: center;
+}
+Button{
+    background-color: #161515;
+    font-size: 20px;
+    color: white;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #f4f1f3;
+}
+.signup
+{
+    margin-top: 5px;
+    color: rgb(49, 36, 46);
+}
+.signup a{
+    color: rgb(77, 115, 182);
+    font-weight: 600;
+}

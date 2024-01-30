@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="bootsignin.css" />
+    <title>Signin</title>
+    <script>
+        function validateform() {
+            var name = document.myform.name.value;
+            var username = document.myform.username.value;
+            var password = document.myform.password.value;
+            var password1 = document.myform.password1.value;
+            var phno = document.myform.phno.value;
+            var email = document.myform.email.value;
+
+            if (name == null || name == "") {
+                alert("Name can't be blank");
+                return false;
+            }
+
+            if (username == null || username == "") {
+                alert("Username can't be blank");
+                return false;
+            }
+            if (password == "") {
+                alert("Please enter your password");
+                password.focus();
+                return false;
+            }
+
+            if (password != password1) {
+                alert("Password mismatch");
+                return false;
+            }
+            if (password.length != "") {
+                var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;
+                if (regex.test(password) === false) {
+                    alert("Please enter a valid pwd");
+                    return false;
+                }
+            }
+            if (name.length != "") {
+                var regex = /^(?=.[A-z])/;
+                if (regex.test(name) === false) {
+                    alert("Please enter a valid Name");
+                    return false;
+                }
+            }
+
+            if (username.length != "") {
+                var regex = /^(?=.[A-z])/;
+                if (regex.test(username) === false) {
+                    alert("Please enter a valid Username");
+                    return false;
+                }
+            }
+ 
+            if(phno.length!=10)
+            {
+                alert("Please enter a valid phone number");
+                return false;
+            }
+            if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
+                return (true)
+            }
+            else {
+                alert("Please enter a valid e-mail address");
+                return (false)
+            }
+        }
+
+        function getFocus1() {
+            document.getElementById("name").style.borderBlockColor = "lightskyblue";
+          }
+
+          function getFocus2() {
+            document.getElementById("username").style.borderBlockColor = "lightskyblue";
+          }
+
+          function getFocus3() {
+            document.getElementById("email").style.borderBlockColor = "lightskyblue";
+          }
+
+          function getFocus4() {
+            document.getElementById("phno").style.borderBlockColor = "lightskyblue";
+          }
+
+          function getFocus5() {
+            document.getElementById("password").style.borderBlockColor = "lightskyblue";
+          }
+
+          function getFocus6() {
+            document.getElementById("password1").style.borderBlockColor = "lightskyblue";
+          }
+
+          function getBlur1() {
+            document.getElementById("name").style.borderBlockColor = "black";
+          }
+
+          function getBlur2() {
+            document.getElementById("username").style.borderBlockColor = "black";
+          }
+
+          function getBlur3() {
+            document.getElementById("email").style.borderBlockColor = "black";
+          }
+
+          function getBlur4() {
+            document.getElementById("phno").style.borderBlockColor = "black";
+          }
+
+          function getBlur5() {
+            document.getElementById("password").style.borderBlockColor = "black";
+          }
+
+          function getBlur6() {
+            document.getElementById("password1").style.borderBlockColor = "black";
+          }  
+
+          function myFunc() {
+            location.replace("file:///C:/Personal/College/Semester%204/WT/COMIKS%20READER%20WT%20PROJECT%202/bootlogin.html");
+        }
+        
+    </script>
+</head>
+<body>
+
+    <section class="container">
+        <header>Create Your Account</header>
+        <form action="" class="form" name="myform" method="post" onsubmit="return validateform()">
+            <div class="input-box"> 
+                <label>Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" onfocus="getFocus1()" onblur="getBlur1()" autofocus />
+            </div>
+            <div class="input-box"> 
+                <label>Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter your username" onfocus="getFocus2()" onblur="getBlur2()" />
+            </div>
+            <div class="input-box">
+                <label>E-mail</label>
+                <input type="text" id="email" name="email" placeholder="Enter your e-mail address" onfocus="getFocus3()" onblur="getBlur3()" />
+            </div>
+            <div class="input-box">
+                <label>Phone Number</label> 
+                <input type="text" id="phno" name="phno" placeholder="Enter your phone number" onfocus="getFocus4()" onblur="getBlur4()" />
+            </div>
+            <div class="genre-box">
+                <label>Genre</label>
+                <div class="genre-option">
+                    <div class="genre">
+                        <input type="radio" id="check-action" name="genre" /> <label for="check-action">Action</label>
+                    </div>
+                    <div class="genre">
+                        <input type="radio" id="check-romance" name="genre" /> <label for="check-romance">Romance</label>
+                    </div>
+                    <div class="genre">
+                        <input type="radio" id="check-fantasy" name="genre" /> <label for="check-fantasy">Fantasy</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input-box">
+                <label>Password</label>
+                <input type="password" id="password" name="password" placeholder="Create your password" onfocus="getFocus5()" onblur="getBlur5()" />
+                </div>
+            </div>
+            <div class="input-box">
+                <label>Confirm Password</label>
+                <input type="password" id="password1" name="password1" placeholder="Confirm your password" onfocus="getFocus6()" onblur="getBlur6()" />
+            </div>
+            <button type="submit" onsubmit="myFunc()" formaction="http://localhost:3400/save">Signin</button>
+        </form>
+    </section>
+</body>
+</html>

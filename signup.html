@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signup.css">
+    <title>Document</title>
+    <script>  
+        function validateform(){  
+        var name=document.myform.name.value;  
+        var password=document.myform.password.value;  
+        var password1=document.myform.password1.value;
+        
+        
+        if (name==null || name==""){  
+          alert("Name Cannot Be Blank");  
+          return false;  
+        }
+        if (password == "") {
+                alert("Please Enter Your Password");
+                password.focus();
+                return false;
+            }
+        
+        if(password != password1){
+            alert("Password Mismatch");
+                return false;
+        }
+        if(password.length!= ""){
+               var regex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#\$%\^&\*])(?=.{8,})/;                
+                if(regex.test(password) === false) 
+                {    alert("Please Enter a Valid password");
+                        return false;
+                }       
+        }
+        </script>  
+        
+</head>
+<body>
+    <div class="container">
+        <div class="title"> Signup</div>
+        <form action="">
+            <div class="User-Details">
+                <div class="input-box">
+                    <span class="details">Name</span>
+                    <input type="text" placeholder="Enter your name" required autofocus>
+                </div>
+                <div class="input-box">
+                    <span class="details">Username</span>
+                    <input type="text" placeholder="Enter your username" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">E-mail</span>
+                    <input type="text" placeholder="Enter your e-mail" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Age</span>
+                    <input type="text" placeholder="Enter your age" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Password</span>
+                    <input type="text" placeholder="Enter your password" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Confirm Password</span>
+                    <input type="text" placeholder="Confirm your password" required>
+                </div>
+            </div>
+           <div class="genre-details">
+                <span class="genre-title">Choose your favourite genre</span>
+                <div class="category">
+                    <div class="Radio">
+                        <input type="radio" name="required_type" value="Action"> Action &emsp;
+                        <input type="radio" name="required_type" value="Romance"> Romance &emsp;
+                        <input type="radio" name="required_type" value="Fantasy"> Fantasy &emsp;
+                    </div>
+                </div>
+            <div class="button">
+                <input type="submit"value="Signup">
+                <!--<input type="reset" value="Clear">-->
+            </div>
+        </form>
+    </div>
+</body>
+</html>
